@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dungeon Arcanum — Demo Complejo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Dungeon Arcanum — Demo Complejo</h1>
+  <div class="controls">
+    <button id="btn-start">Iniciar / Reanudar</button>
+    <button id="btn-save">Guardar</button>
+    <button id="btn-load">Cargar</button>
+    <button id="btn-reset">Reiniciar</button>
+  </div>
+</header>
+<main>
+  <canvas id="game"></canvas>
+  <aside id="hud">
+    <div id="stats">
+      <div>Nivel: <span id="level">1</span></div>
+      <div>HP: <span id="hp">100</span></div>
+      <div>Score: <span id="score">0</span></div>
+    </div>
+    <div id="inventory">
+      <h3>Inventario</h3>
+      <ul id="inv-list"></ul>
+    </div>
+    <div id="log"></div>
+  </aside>
+</main>
+<footer>
+  <small>Controles: Flechas / WASD mover • Espacio atacar • E usar</small>
+</footer>
+<script src="game.js" type="module"></script>
+</body>
+</html>
